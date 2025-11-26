@@ -245,5 +245,23 @@ Children:
       Type: DynamicLink
       DataType: NodePath
       Value: "/Objects/CorsoVR_26_11_2025@BrowseName"
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"ciao"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 120.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
 - File: Screens/Screens.yaml
 - File: Keyboards/Keyboards.yaml
