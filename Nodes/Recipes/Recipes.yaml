@@ -1,2 +1,85 @@
 Name: Recipes
 Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema1
+  Id: g=f5b88a6799abc4c6524f5ee69766a2b8
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: Variable1
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Variable2
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: Variable3
+      Type: BaseDataVariableType
+      DataType: String
+  - Class: Reference
+    Target: ns=31;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=60
+    Direction: Forward
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/CorsoVR_26_11_2025/DataStores/EmbeddedDatabase1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/CorsoVR_26_11_2025/Model/RicettaVariable"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+  - Name: EditModel
+    Id: g=b219e1cf7aed042bd316b03c5892263c
+    Type: BaseObjectType
+    Children:
+    - Name: Variable1
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Variable2
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: Variable3
+      Type: BaseDataVariableType
+      DataType: String

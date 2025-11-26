@@ -1,0 +1,17 @@
+Name: RicettaVariable
+Id: g=6a10267a21cb5443c63e39ecaf2a578f
+Type: FolderType
+Children:
+- Name: Variable1
+  Id: g=5f36c53406ef6d7fdd49d50ff682cf34
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable2
+  Id: g=bb04f37a03c38a9538718c98f3304440
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable3
+  Id: g=0aef49b863f0a7e25fcb96ed2a96eb84
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"

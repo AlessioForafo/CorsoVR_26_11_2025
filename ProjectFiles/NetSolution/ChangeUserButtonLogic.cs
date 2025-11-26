@@ -7,6 +7,17 @@ using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.NetLogic;
 using FTOptix.Core;
 using FTOptix.UI;
+using FTOptix.Alarm;
+using FTOptix.EventLogger;
+using FTOptix.Store;
+using FTOptix.SQLiteStore;
+using FTOptix.DataLogger;
+using FTOptix.Recipe;
+using FTOptix.Report;
+using FTOptix.OPCUAServer;
+using FTOptix.MQTTClient;
+using FTOptix.SerialPort;
+using FTOptix.System;
 #endregion
 
 public class ChangeUserButtonLogic : BaseNetLogic
