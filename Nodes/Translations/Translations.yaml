@@ -2,6 +2,7 @@ Name: Translations
 Type: TranslationsCategoryFolder
 Children:
 - Name: LocalizationDictionary1
+  Id: g=67e7d5dc31ab2e442e58bbe54143e038
   Type: LocalizationDictionary
   DataType: String
   ValueRank: OneOrMoreDimensions
@@ -9,8 +10,95 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [1,2],
+    "Dimensions": [40,4],
     "Body": [
-     "","en-US"
+     "","en-US","it-IT","ru-RU",
+     "hello","hello","ciao","привет",
+     "START","START","AVVIO","",
+     "STOP","STOP","FERMA","",
+     "Confirm password","Confirm password","Conferma password","",
+     "Password","Password","Password","",
+     "Change User","Change User","Cambia utente","",
+     "Old password","Old password","Vecchia password","",
+     "New password","New password","Nuova password","",
+     "Change password","Change password","Cambia password","",
+     "ChangePasswordFormUnsupportedOperationMessage","Unsupported operation","Operazione non supportata","",
+     "Your password has expired. Please enter a new one.","Your password has expired. Please enter a new one.","Password scaduta. Immetterne una nuova.","",
+     "ChangeUserFormOutputSuccessMessage","Change User successful","Cambio utente riuscito","",
+     "ChangeUserFormOutputErrorMessage","Authentication failed","Autenticazione fallita","",
+     "ChangeUserFormOutputPasswordExpired","Password expired","Password scaduta","",
+     "ChangePasswordFormSuccessMessage","Password changed successfully","Password cambiata con successo","",
+     "ChangePasswordFormWrongOldPasswordMessage","Wrong old password","Vecchia password errata","",
+     "ChangePasswordFormPasswordAlreadyUsedMessage","Password already used","Password già utilizzata","",
+     "ChangePasswordFormPasswordChangedTooRecentlyMessage","Password changed too recently","Password cambiata troppo recentemente","",
+     "ChangePasswordFormPasswordTooShortMessage","Password too short","Password troppo corta","",
+     "ChangePasswordFormUserNotFoundMessage","User not found","Utente non trovato","",
+     "ChangePasswordFormPasswordMismatchMessage","Passwords do not match","Le password non coincidono","",
+     "Create","Create","Crea","",
+     "Groups","Groups","Gruppi","",
+     "EmptyUserList","No users in list","Nessun utente nell'elenco","",
+     "Name","Name","Nome","",
+     "PasswordChangedTooRecently","Password changed too recently","Password cambiata troppo recentemente","",
+     "Roles","Roles","Ruoli","",
+     "Delete","Delete","Elimina","",
+     "Apply","Apply","Applica","",
+     "Cancel","Cancel","Annulla","",
+     "Locale:","Locale:","Impostazioni locali:","",
+     "CannotCreateUserWithEmptyUsername","Cannot create user with empty username","Impossibile creare un utente con nome utente vuoto","",
+     "UnableToGetUsers","Unable to get users","Impossibile ottenere gli utenti","",
+     "UsernameAlreadyExists","Username already exists","Nome utente già esistente","",
+     "UserNotFound","User not found","Utente non trovato","",
+     "PasswordAlreadyUsed","Password already used in the past","Password già utilizzata in passato","",
+     "PasswordTooShort","Password too short","Password troppo corta","",
+     "UnsupportedOperation","Unsupported operation","Operazione non supportata","",
+     "ChangesAppliedSuccessfully","Changes applied successfully","Modifiche applicate correttamente",""
     ]
    }
+- Name: ImportAndExportTranslations
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: CSVPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///C:/Temp/TestTraduzioni.csv"
+  - Class: Method
+    Name: ExportTranslations
+  - Class: Method
+    Name: ImportTranslations
+  - Name: CharacterSeparator
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ";"
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: LocalizationDictionary
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/CorsoVR_26_11_2025/Translations/LocalizationDictionary1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/LocalizationDictionary"
+  - Name: ns=4;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "e7cab90d0ab7e8b5b02218e38bca9a0e",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
